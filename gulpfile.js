@@ -10,13 +10,13 @@ gulp.task('style', function () {
     .pipe(plumber())
     .pipe(autoprefixer('last 2 versions'))
     .pipe(sass())
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('app/css'));
 })
 
 gulp.task('compress', function () {
   gulp.src('app/preimg/*')
     .pipe(imagemin({ optimization: 7 }))
-    .pipe(gulp.dest('app/img'))
+    .pipe(gulp.dest('app/img'));
 })
 
 
@@ -30,4 +30,4 @@ gulp.task('watch', function () {
   gulp.watch('app/**/*.html', ['html']);
 })
 
-gulp.task('default', ['style', 'html', 'watch'])
+gulp.task('default', ['style', 'html', 'watch']);
