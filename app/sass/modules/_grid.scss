@@ -1,0 +1,27 @@
+.main-header{
+ display: grid;
+ grid-gap: 10px;
+
+ @include mq (30em){
+   grid-template-columns: repeat(3, 3fr);
+ }
+
+ .write{
+   grid-column: span 1;
+ }
+
+ .fash{
+   grid-column: span 2;
+
+ }
+
+ .pics{
+   display: grid;
+   grid-gap: 10px;
+
+   @include mq (30em){
+    grid-template-columns: repeat(3, 1fr);
+  }
+ 
+ }
+}
