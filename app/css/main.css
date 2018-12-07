@@ -3,47 +3,62 @@
   grid-gap: 10px; }
   @media (min-width: 30rem) {
     .main-header {
+      grid-gap: 5px;
       grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: minmax(290px, auto) 1fr; } }
   .main-header .fash {
     grid-column: span 2; }
   .main-header .pics {
     display: grid;
-    grid-gap: 3px; }
+    grid-gap: 5px; }
     @media (min-width: 30em) {
       .main-header .pics {
         grid-template-columns: repeat(3, 1fr); } }
 
 .cant {
   display: grid;
-  grid-gap: 10px;
-  border: 1px solid red; }
+  grid-gap: 7px; }
   @media (min-width: 30em) {
     .cant {
       grid-gap: 5px;
       grid-template-columns: repeat(3, 1fr); } }
   .cant .sider {
-    grid-column: 1 /-1;
     grid-row: 1; }
     @media (min-width: 30em) {
       .cant .sider {
-        grid-column: 1 / span 1;
-        border: 1px solid blue; } }
-  .cant .water {
-    grid-column: 1 /-1;
+        grid-column: 1 / span 1; } }
+  @media (min-width: 30em) {
+    .cant .water {
+      grid-column: 2 / span 2; } }
+  .cant .water .season {
+    grid-row: 1; }
+  .cant .water .collec {
     grid-row: 2; }
+  .cant .water .collect {
+    display: grid;
+    grid-gap: 5px; }
     @media (min-width: 30em) {
-      .cant .water {
-        grid-column: 2/ span 2;
-        grid-row: 1;
-        border: 1px solid brown; } }
+      .cant .water .collect {
+        grid-template-columns: 1fr; } }
+    .cant .water .collect .smi {
+      display: grid;
+      grid-gap: 5px; }
+      @media (min-width: 30em) {
+        .cant .water .collect .smi {
+          grid-template-columns: repeat(3, 1fr);
+          grid-auto-rows: auto; } }
+    .cant .water .collect .smo {
+      display: grid;
+      grid-gap: 5px; }
+      @media (min-width: 30em) {
+        .cant .water .collect .smo {
+          grid-template-columns: repeat(3, 1fr); } }
 
 .sum {
   display: grid;
-  grid-gap: 10px; }
+  grid-gap: 5px; }
   @media (min-width: 30em) {
     .sum {
-      grid-gap: 5px;
       grid-template-columns: repeat(3, 1fr); } }
 
 * {
@@ -382,13 +397,19 @@ template {
     padding: 0;
     position: relative; }
     .main-header .fash .del {
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-family: cursive;
       color: #8a1113;
       font-weight: bold; }
+      @media (min-width: 30em) {
+        .main-header .fash .del {
+          font-size: 1.5rem; } }
     .main-header .fash .cle {
       font-family: 'Lucida Sans', sans-serif;
-      font-size: 14px; }
+      font-size: 13px; }
+      @media (min-width: 30em) {
+        .main-header .fash .cle {
+          font-size: 14px; } }
     .main-header .fash .shop {
       position: absolute;
       top: 0px;
@@ -421,7 +442,7 @@ template {
     .main-header .fash .mane {
       background-color: #010005;
       margin: 2rem 0 0 1px;
-      padding: 2px; }
+      padding: 1px; }
       .main-header .fash .mane ul {
         margin: 0;
         padding: 0; }
@@ -430,26 +451,30 @@ template {
             display: flex; } }
         .main-header .fash .mane ul li {
           list-style: none;
+          position: relative;
           border-bottom: 1px dotted #f9fef8; }
           @media (min-width: 30rem) {
             .main-header .fash .mane ul li {
               border: 0;
-              flex: 1; } }
+              flex-basis: 20%; } }
           @media (min-width: 30rem) {
             .main-header .fash .mane ul li::before {
               content: '|';
               display: inline-block;
               color: white;
+              position: absolute;
+              top: 5;
+              left: 0; }
+            .main-header .fash .mane ul li:nth-child(1) {
               margin: 0; } }
           .main-header .fash .mane ul li a {
             text-align: center;
             display: block;
-            padding: 5px; }
+            padding: 2px 3px; }
     .main-header .fash .pics {
       margin-top: 1px;
-      padding: 2px;
-      border: 1px solid #ebc1b1;
-      background-color: #fce8e1; }
+      padding: 0;
+      background-color: #f9fef8; }
       @media (min-width: 30rem) {
         .main-header .fash .pics {
           height: 200px;
@@ -465,8 +490,7 @@ template {
         background-image: url("../img/10 copy.jpg");
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
-        height: 200px; }
+        background-size: cover; }
       .main-header .fash .pics .kids {
         background-image: url("../img/21.jpg");
         background-position: center center;
@@ -481,10 +505,107 @@ template {
         height: 200px; }
 
 .wrap {
-  background-color: red; }
-  .wrap .sider {
-    background-color: orange; }
-  .wrap .season {
-    background-color: blue; }
-  .wrap .collec {
-    background-color: #4d912eec; }
+  background-color: #f9fef8; }
+  .wrap .cant .sider {
+    background-color: #f29da6; }
+    .wrap .cant .sider h2 {
+      margin-top: 0;
+      padding: 5px;
+      text-align: center;
+      font-size: 1.6rem;
+      background-color: #e0dedd;
+      font-family: robote sans-serif; }
+    .wrap .cant .sider ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .wrap .cant .sider ul li {
+        position: relative;
+        padding: 14px;
+        border-bottom: 1px dotted #f9fef8; }
+        .wrap .cant .sider ul li::before {
+          content: '\203a';
+          position: absolute;
+          font-size: 22px;
+          top: 9px;
+          left: 3rem; }
+        .wrap .cant .sider ul li a {
+          display: block;
+          text-align: center;
+          font-family: fantasy sans-serif; }
+  .wrap .cant .water {
+    margin-top: 2px;
+    background-color: #f1fdef; }
+    .wrap .cant .water .season {
+      padding: 10px;
+      line-height: 1.4;
+      background-color: #f29da6; }
+      .wrap .cant .water .season h2 {
+        margin-top: 0; }
+    .wrap .cant .water .collec {
+      margin-top: 2px;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #f29da6; }
+      @media (min-width: 30rem) {
+        .wrap .cant .water .collec {
+          display: flex; } }
+      .wrap .cant .water .collec .new {
+        flex: 1;
+        height: 50%;
+        padding: 8px; }
+        .wrap .cant .water .collec .new h3 {
+          margin-top: 0;
+          font-size: 1.2rem;
+          font-family: Georgia sans-serif; }
+        .wrap .cant .water .collec .new ul {
+          margin: -10px 0 0;
+          padding: 0; }
+          .wrap .cant .water .collec .new ul li {
+            list-style: none; }
+            .wrap .cant .water .collec .new ul li::before {
+              content: '';
+              display: inline-block;
+              width: 4px;
+              height: 4px;
+              background-color: #010005;
+              border-radius: 2px;
+              margin-right: 5px; }
+            .wrap .cant .water .collec .new ul li a {
+              font-size: 14px;
+              font-family: cursive;
+              display: inline-block;
+              color: #010005; }
+        .wrap .cant .water .collec .new p {
+          font-size: 13px; }
+          @media (min-width: 30rem) {
+            .wrap .cant .water .collec .new p {
+              font-size: 16px; } }
+          .wrap .cant .water .collec .new p a {
+            color: #f9fef8;
+            font-family: cursive; }
+      .wrap .cant .water .collec .collect {
+        flex: 2;
+        height: 40%;
+        padding: 3px; }
+      .wrap .cant .water .collec .phot {
+        flex: 1;
+        height: 40%;
+        margin: 0; }
+
+.fis h2 {
+  font-family: Arial, Helvetica, sans-serif sans-serif;
+  font-size: 1.4rem;
+  margin-left: 5px; }
+
+.sum {
+  background-color: #ef8791; }
+  .sum p {
+    font-family: Cambria sans-serif;
+    font-size: 1.2rem; }
+
+.woman {
+  background-color: #a39e9b; }
+
+.boy {
+  background-color: #f4abb2; }
