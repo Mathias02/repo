@@ -46,11 +46,10 @@
     }
   }
  .water{
-   margin-top: 2px;
-  background-color: darken($clr-white, 2);
+  background-color: darken($clr-pink, 2);
 
   .season{
-  padding: 10px;
+  padding: 11px;
   line-height: 1.4;
   background-color: darken($clr-pink, 3);
 
@@ -66,13 +65,14 @@
     background-color: darken($clr-pink, 3);
 
     @include mq(30rem){
+      padding: 1rem;
       display: flex;
     }
 
     .new{
       flex: 1;
-      height: 50%;
-      padding: 8px;
+      padding: 5px;
+      margin-top: -2px;
 
       h3{
         margin-top: 0;
@@ -82,17 +82,21 @@
 
       ul{
         margin: -10px 0 0;
-        padding: 0;
+        padding-left: 1px;
+        
         li{
           list-style: none;
+          display: flex;
+          margin-bottom: 2px;
           &::before{
             content: '';
             display:inline-block;
-            width: 4px;
-            height: 4px;
+            width: 6px;
+            height: 6px;
             background-color: $clr-black;
-            border-radius: 2px;
+            border-radius: 3px;
             margin-right: 5px;
+            margin-top: 6px;
           }
 
           a{
@@ -105,10 +109,6 @@
       }
       p{
         font-size: 13px;
-
-        @include mq(30rem){
-          font-size: 16px;
-        }
 
         a{
           color: $clr-white;
@@ -125,6 +125,7 @@
       flex: 1;
       height: 40%;
       margin: 0;
+      padding: 5px;
     }
   }
  }

@@ -1,3 +1,117 @@
 .woman{
   background-color: $clr-gray;
 }
+.woma{
+  margin: 0;
+  padding: 2px;
+
+  h1{
+    color: lighten($clr-darkgreen, 12);
+    text-align: center;
+    font-family: cursive;
+    font-size: 1rem;
+
+    @include mq( 30rem){
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.ter{
+  padding: 1px;
+  margin: 0;
+
+  h3, h4{
+    color: lighten($clr-darkgreen, 12);
+    text-align: center;
+    font-family: cursive;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    @include mq( 30rem){
+      font-size: 1.1rem;
+    }
+  }
+
+  .tree{
+    padding: 1px;
+    margin: 0;
+
+    .tree-0{
+    
+
+      @include mq( 30rem){
+        margin-left: 3px;
+      }
+      .car{
+        float: left;
+        width: 50%;
+        margin-right: 10px;
+
+        @include mq( 30rem){
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .tree-1{
+      padding: 1px;
+
+      @include mq( 30rem){
+        margin-left: 2px;
+      }
+
+      .be{
+        float: left;
+        width: 50%;
+        margin-right: 10px;
+        margin-bottom: 1px;
+
+        @include mq( 30rem){
+          margin-right: 8px;
+          
+        }
+      }
+    }
+  }
+}
+
+
+.afri{
+  margin: 0;
+
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif sans-serif;
+    font-size: 1rem;
+    color: lighten($clr-darkgreen, 12);
+    text-align: center;
+
+    @include mq( 30rem){
+      font-size: 1.5rem;
+    }
+
+    .afro{
+      padding: 1px;
+    }
+  }
+ 
+}
+
+.speci{
+  padding: 2px;
+  margin: 0;
+
+  h2{
+    padding: 10px;
+    color: $clr-white;
+    text-align: left;
+    font-size: 1rem;
+    background-color: $clr-darkgreen;
+    font-family: Tahoma, sans-serif;
+
+    @include mq( 30rem){
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+  }
+}

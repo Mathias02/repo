@@ -17,7 +17,7 @@
 
 .cant {
   display: grid;
-  grid-gap: 7px; }
+  grid-gap: 4px; }
   @media (min-width: 30em) {
     .cant {
       grid-gap: 5px;
@@ -60,6 +60,46 @@
   @media (min-width: 30em) {
     .sum {
       grid-template-columns: repeat(3, 1fr); } }
+
+.der {
+  display: grid;
+  grid-gap: 5px; }
+  @media (min-width: 30em) {
+    .der {
+      grid-template-columns: repeat(3, 2fr);
+      grid-template-rows: auto; } }
+
+.tree {
+  display: grid;
+  grid-gap: 5px; }
+  @media (min-width: 30em) {
+    .tree {
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: auto; } }
+
+.afro {
+  display: grid;
+  grid-gap: 5px; }
+  @media (min-width: 30em) {
+    .afro {
+      grid-template-columns: repeat(3, 2fr);
+      grid-template-rows: auto; } }
+
+.spe {
+  display: grid;
+  grid-gap: 5px; }
+  @media (min-width: 30em) {
+    .spe {
+      grid-template-columns: repeat(3, 2fr);
+      grid-template-rows: auto; } }
+
+.divi {
+  display: grid;
+  grid-gap: 5px; }
+  @media (min-width: 30em) {
+    .divi {
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: auto; } }
 
 * {
   box-sizing: border-box; }
@@ -534,10 +574,9 @@ template {
           text-align: center;
           font-family: fantasy sans-serif; }
   .wrap .cant .water {
-    margin-top: 2px;
-    background-color: #f1fdef; }
+    background-color: #f3a2aa; }
     .wrap .cant .water .season {
-      padding: 10px;
+      padding: 11px;
       line-height: 1.4;
       background-color: #f29da6; }
       .wrap .cant .water .season h2 {
@@ -549,28 +588,32 @@ template {
       background-color: #f29da6; }
       @media (min-width: 30rem) {
         .wrap .cant .water .collec {
+          padding: 1rem;
           display: flex; } }
       .wrap .cant .water .collec .new {
         flex: 1;
-        height: 50%;
-        padding: 8px; }
+        padding: 5px;
+        margin-top: -2px; }
         .wrap .cant .water .collec .new h3 {
           margin-top: 0;
           font-size: 1.2rem;
           font-family: Georgia sans-serif; }
         .wrap .cant .water .collec .new ul {
           margin: -10px 0 0;
-          padding: 0; }
+          padding-left: 1px; }
           .wrap .cant .water .collec .new ul li {
-            list-style: none; }
+            list-style: none;
+            display: flex;
+            margin-bottom: 2px; }
             .wrap .cant .water .collec .new ul li::before {
               content: '';
               display: inline-block;
-              width: 4px;
-              height: 4px;
+              width: 6px;
+              height: 6px;
               background-color: #010005;
-              border-radius: 2px;
-              margin-right: 5px; }
+              border-radius: 3px;
+              margin-right: 5px;
+              margin-top: 6px; }
             .wrap .cant .water .collec .new ul li a {
               font-size: 14px;
               font-family: cursive;
@@ -578,9 +621,6 @@ template {
               color: #010005; }
         .wrap .cant .water .collec .new p {
           font-size: 13px; }
-          @media (min-width: 30rem) {
-            .wrap .cant .water .collec .new p {
-              font-size: 16px; } }
           .wrap .cant .water .collec .new p a {
             color: #f9fef8;
             font-family: cursive; }
@@ -591,7 +631,8 @@ template {
       .wrap .cant .water .collec .phot {
         flex: 1;
         height: 40%;
-        margin: 0; }
+        margin: 0;
+        padding: 5px; }
 
 .fis h2 {
   font-family: Arial, Helvetica, sans-serif sans-serif;
@@ -606,6 +647,85 @@ template {
 
 .woman {
   background-color: #a39e9b; }
+
+.woma {
+  margin: 0;
+  padding: 2px; }
+  .woma h1 {
+    color: #424d5a;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1rem; }
+    @media (min-width: 30rem) {
+      .woma h1 {
+        font-size: 1.5rem; } }
+
+.ter {
+  padding: 1px;
+  margin: 0; }
+  .ter h3, .ter h4 {
+    color: #424d5a;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1rem;
+    text-transform: uppercase; }
+    @media (min-width: 30rem) {
+      .ter h3, .ter h4 {
+        font-size: 1.1rem; } }
+  .ter .tree {
+    padding: 1px;
+    margin: 0; }
+    @media (min-width: 30rem) {
+      .ter .tree .tree-0 {
+        margin-left: 3px; } }
+    .ter .tree .tree-0 .car {
+      float: left;
+      width: 50%;
+      margin-right: 10px; }
+      @media (min-width: 30rem) {
+        .ter .tree .tree-0 .car {
+          margin-right: 10px; } }
+    .ter .tree .tree-1 {
+      padding: 1px; }
+      @media (min-width: 30rem) {
+        .ter .tree .tree-1 {
+          margin-left: 2px; } }
+      .ter .tree .tree-1 .be {
+        float: left;
+        width: 50%;
+        margin-right: 10px;
+        margin-bottom: 1px; }
+        @media (min-width: 30rem) {
+          .ter .tree .tree-1 .be {
+            margin-right: 8px; } }
+
+.afri {
+  margin: 0; }
+  .afri h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif sans-serif;
+    font-size: 1rem;
+    color: #424d5a;
+    text-align: center; }
+    @media (min-width: 30rem) {
+      .afri h2 {
+        font-size: 1.5rem; } }
+    .afri h2 .afro {
+      padding: 1px; }
+
+.speci {
+  padding: 2px;
+  margin: 0; }
+  .speci h2 {
+    padding: 10px;
+    color: #f9fef8;
+    text-align: left;
+    font-size: 1rem;
+    background-color: #282f37;
+    font-family: Tahoma, sans-serif; }
+    @media (min-width: 30rem) {
+      .speci h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1px; } }
 
 .boy {
   background-color: #f4abb2; }

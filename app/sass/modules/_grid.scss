@@ -24,7 +24,7 @@
 }
  .cant{
   display: grid;
-  grid-gap: 7px;
+  grid-gap: 4px;
 
   @include mq (30em){
     grid-gap: 5px;
@@ -93,4 +93,55 @@
     
    }
 }
+.der{
+  display: grid;
+  grid-gap: 5px;
 
+  @include mq (30em){
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+    
+   }
+}
+
+.tree{
+  display: grid;
+  grid-gap: 5px;
+
+  @include mq (30em){
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+  }
+}
+
+.afro{
+  display: grid;
+  grid-gap: 5px;
+
+  @include mq (30em){
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+  }
+
+}
+
+.spe{
+  display: grid;
+  grid-gap: 5px;
+
+  @include mq (30em){
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+  }
+}
+
+
+.divi{
+  display: grid;
+  grid-gap: 5px;
+
+  @include mq (30em){
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+  }
+}
