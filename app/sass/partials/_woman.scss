@@ -98,7 +98,7 @@
 }
 
 .speci{
-  padding: 2px;
+  padding: 1px;
   margin: 0;
 
   h2{
@@ -114,4 +114,79 @@
       letter-spacing: 1px;
     }
   }
+}
+
+.divi{
+  padding: 3px;
+
+  @include mq( 30rem){
+    padding: 5px;
+  }
+
+  .divi-1{
+    padding: 5px;
+
+    @include mq( 30rem){
+      padding: 10px;
+    }
+  h3{
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  ul{
+    margin: 10px;
+    list-style: none;
+
+    li{
+      padding: 1px;
+
+      &::before{
+        content: '\203a';
+        margin-right: 8px; 
+        font-weight: bold;
+        font-size: 20px;
+  
+      }
+
+      a{
+        color: darken($clr-maroon, 70);
+        display: inline-block;
+    }
+
+  }
+  }
+}
+.divi-2{
+  padding: 5px;
+  position: relative;
+  counter-reset: nam;
+
+  @include mq( 30rem){
+    padding: 8px;
+  }
+
+  p{
+    &::before{
+      counter-increment: nam;
+      content: counter(nam)'';
+      font-weight: 50;
+      width: 10px;
+      height: 10px;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid $clr-black;
+      border-radius: 50%;
+      background-color: $clr-white;
+      display: inline-block;
+      text-align: center;
+      line-height: 10px;
+
+      
+    }
+    
+
+  }
+
+}
 }

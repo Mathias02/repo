@@ -713,7 +713,7 @@ template {
       padding: 1px; }
 
 .speci {
-  padding: 2px;
+  padding: 1px;
   margin: 0; }
   .speci h2 {
     padding: 10px;
@@ -726,6 +726,54 @@ template {
       .speci h2 {
         font-size: 1.5rem;
         letter-spacing: 1px; } }
+
+.divi {
+  padding: 3px; }
+  @media (min-width: 30rem) {
+    .divi {
+      padding: 5px; } }
+  .divi .divi-1 {
+    padding: 5px; }
+    @media (min-width: 30rem) {
+      .divi .divi-1 {
+        padding: 10px; } }
+    .divi .divi-1 h3 {
+      text-align: left;
+      text-transform: capitalize; }
+    .divi .divi-1 ul {
+      margin: 10px;
+      list-style: none; }
+      .divi .divi-1 ul li {
+        padding: 1px; }
+        .divi .divi-1 ul li::before {
+          content: '\203a';
+          margin-right: 8px;
+          font-weight: bold;
+          font-size: 20px; }
+        .divi .divi-1 ul li a {
+          color: black;
+          display: inline-block; }
+  .divi .divi-2 {
+    padding: 5px;
+    position: relative;
+    counter-reset: nam; }
+    @media (min-width: 30rem) {
+      .divi .divi-2 {
+        padding: 8px; } }
+    .divi .divi-2 p::before {
+      counter-increment: nam;
+      content: counter(nam) "";
+      font-weight: 50;
+      width: 10px;
+      height: 10px;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #010005;
+      border-radius: 50%;
+      background-color: #f9fef8;
+      display: inline-block;
+      text-align: center;
+      line-height: 10px; }
 
 .boy {
   background-color: #f4abb2; }
