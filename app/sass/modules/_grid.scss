@@ -11,15 +11,14 @@
  .fash{
    grid-column: span 2;
  }
-
-
  .pics{
-  display: grid;
-  grid-gap: 5px;
+   display: grid;
+   grid-gap: 3px;
+   @include mq(30rem){
+    grid-template-columns: repeat(3, 1fr);
+     }
 
-  @include mq (30em){
-   grid-template-columns: repeat(3, 1fr);
-  }
+  
  }
 }
  .cant{
@@ -93,6 +92,10 @@
     
    }
 }
+
+/***woman section*****/
+
+
 .der{
   display: grid;
   grid-gap: 5px;
@@ -143,5 +146,82 @@
   @include mq (30em){
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: auto;
+  }
+}
+
+
+/*man section */
+
+.coll{
+  display: grid;
+  grid-gap: 5px;
+
+  @include mq(30rem){
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1;
+  }
+}
+
+.me{
+  display: grid;
+  grid-gap: 5px;
+
+  @include mq(30rem){
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .me-0{
+    grid-column: span 2;
+    @include mq(30rem){
+      grid-column: 1/ span 3;
+      grid-row: span 3
+    }
+    
+  }
+  .me-1{
+    grid-column: span 1;
+    grid-row: 2;
+
+    @include mq(30rem){
+      grid-column: 4/ span 2;
+      grid-row: 1;
+    }
+  }
+  .me-2{
+    grid-column: span 1;
+    grid-row: 2;
+
+    @include mq(30rem){
+      grid-column: 4/ span 2;
+      grid-row: 2;
+    }
+   
+  }
+  .me-3{
+    grid-column: span 2;
+    grid-row: 3;
+    @include mq(30rem){
+      grid-column: 4/ span 2;
+      grid-row: 3;
+    } 
+  }
+}
+
+.mano{
+  display: grid;
+  grid-gap: 10px;
+
+  @include mq(30rem){
+    grid-template-columns: repeat(3, 1fr);
+     }
+}
+
+.dire{
+  display: grid;
+  grid-gap: 5px;
+
+  @include mq(30rem){
+    grid-template-columns: repeat(2, 2fr);
   }
 }

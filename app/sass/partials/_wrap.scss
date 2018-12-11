@@ -7,7 +7,7 @@
     background-color: darken($clr-pink, 3);
 
     h2{
-      margin-top: 0;
+      margin: 0;
       padding: 5px;
       text-align: center;
       font-size: 1.6rem;
@@ -38,7 +38,10 @@
 
         a{
           display: block;
-          text-align: center;
+          text-align: left;
+          margin-left: 4rem;
+
+          color: darken($clr-maroon, 45);
           font-family: fantasy sans-serif;
          
         }
@@ -65,7 +68,7 @@
     background-color: darken($clr-pink, 3);
 
     @include mq(30rem){
-      padding: 1rem;
+      padding: .4rem;
       display: flex;
     }
 
@@ -123,8 +126,7 @@
     }
     .phot{
       flex: 1;
-      height: 40%;
-      margin: 0;
+      margin: -5px 0 0;
       padding: 5px;
     }
   }

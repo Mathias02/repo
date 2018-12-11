@@ -1,0 +1,75 @@
+.coll{
+  margin: 0;
+  padding: 3px;
+
+  .gol{
+    padding: 15px;
+    background-color: lighten( $clr-gray, 20);
+  }
+  .gol-1{
+    padding: 15px;
+    background-color: lighten( $clr-gray, 25);
+  }
+}
+
+.more{
+  margin: 0;
+
+  h2{
+    margin: 0;
+    padding: 15px;
+    font-family: cursive;
+    background-color: $clr-gray;
+  }
+
+  .me{
+    margin: 0;
+
+    .me-0{
+      margin: 0;
+      padding: 0;
+
+      .sc{
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.mano{
+  padding: 10px;
+
+  .sket, .watch, .wash{
+    
+    @include mq( 30rem){
+    float: left;
+    width: 50%;
+    margin-right: 10px;
+    }
+  }
+}
+
+.dire{
+  padding: 0;
+  margin: 0;
+
+  .dire-0{
+    padding: 10px;
+
+    .di, .dor{
+      float: left;
+      width: 50%;
+      margin-right: 10px;
+    }
+
+    h4{
+      padding: 10px;
+      color: $clr-white;
+      background-color: darken($clr-lightyellow, 85);
+    }
+  }
+  .dire-1{
+    padding: 10px;
+  }
+}
